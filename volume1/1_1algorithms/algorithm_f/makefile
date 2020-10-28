@@ -1,11 +1,10 @@
-COMPILER=kotlinc
-KOTLINFLAGS=-include-runtime -d
+COMPILER=javac
 
-algorithm_f:
-	$(COMPILER) algorithm_f.kt $(KOTLINFLAGS) algorithm_f.jar
+Algorithm_F:
+	$(COMPILER) Algorithm_F.java 
 
 run:
-	java -jar algorithm_f.jar < input.txt
+	java Algorithm_F < input.txt
 
 clean:
-	rm algorithm_f.jar
+	rm Algorithm_F.class

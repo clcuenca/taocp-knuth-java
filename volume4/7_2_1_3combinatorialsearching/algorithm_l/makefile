@@ -1,11 +1,10 @@
-COMPILER=kotlinc
-KOTLINFLAGS=-include-runtime -d
+COMPILER=javac
 
-algorithm_l:
-	$(COMPILER) algorithm_l.kt $(KOTLINFLAGS) algorithm_l.jar
+Algorithm_L:
+	$(COMPILER) Algorithm_L.java 
 
 run:
-	java -jar algorithm_l.jar
+	java Algorithm_L
 
 clean:
-	rm algorithm_l.jar
+	rm Algorithm_L.class
